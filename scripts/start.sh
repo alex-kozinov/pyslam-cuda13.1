@@ -94,6 +94,7 @@ execute_script "/pre_start.sh" "Running pre-start script..."
 
 echo "Pod Started"
 
+. /opt/pyslam/pyenv-activate.sh
 setup_ssh
 start_jupyter
 export_env_vars
